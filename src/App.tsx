@@ -8,17 +8,38 @@ import Hero from "./components/Hero";
 import Legacy from "./components/Legacy";
 import MusicPlayer from "./components/MusicPlayer";
 import Soundtrack from "./components/Soundtrack";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+import Lenis from "lenis";
+import "lenis/dist/lenis.css";
 
 import { useEffect } from "react";
 
 function App() {
+  // AOS
   useEffect(() => {
     AOS.init({
       duration: 800,
       once: true,
     });
+  }, []);
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
   }, []);
   return (
     <div>
