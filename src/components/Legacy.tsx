@@ -3,7 +3,7 @@ const Legacy = () => {
     <section
       id="legacy"
       style={{
-        backgroundImage: "url('/public/legacy.web')",
+        backgroundImage: "url('/legacy.web')",
       }}
       className="w-full min-h-screen bg-black text-white py-20 px-6 flex flex-col items-center justify-center text-center"
     >
