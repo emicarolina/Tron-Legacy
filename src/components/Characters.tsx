@@ -15,7 +15,7 @@ const Characters = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
         <div
           data-aos="fade-up"
-          className="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6 flex flex-col items-center text-center"
+          className="bg-gray-900 rounded-lg overflow-hidden shadow-lg p-6 flex flex-col items-center text-center"
         >
           <img
             src={kevin}
@@ -29,7 +29,7 @@ const Characters = () => {
         </div>
         <div
           data-aos="fade-up"
-          className="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6 flex flex-col items-center text-center"
+          className="bg-gray-900 rounded-lg overflow-hidden shadow-lg p-6 flex flex-col items-center text-center"
         >
           <img
             src={sam}
@@ -43,7 +43,7 @@ const Characters = () => {
         </div>
         <div
           data-aos="fade-up"
-          className="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6 flex flex-col items-center text-center"
+          className="bg-gray-900 rounded-lg overflow-hidden shadow-lg p-6 flex flex-col items-center text-center"
         >
           <img
             src={quorra}
@@ -57,7 +57,7 @@ const Characters = () => {
         </div>
         <div
           data-aos="fade-up"
-          className="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6 flex flex-col items-center text-center"
+          className="bg-gray-900 rounded-lg overflow-hidden shadow-lg p-6 flex flex-col items-center text-center"
         >
           <img
             src={clu}

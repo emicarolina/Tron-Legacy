@@ -67,7 +67,7 @@ const Curiosities = () => {
                 key={index}
                 className="flex-[0_0_100%] p-8 flex flex-col items-center justify-center select-none"
               >
-                <div className="bg-gray-800 p-8 rounded-2xl max-w-xl min-h-[400px] md:min-h-[300px] flex flex-col justify-center">
+                <div className="bg-gray-900 p-8 rounded-2xl max-w-xl min-h-[400px] md:min-h-[300px] flex flex-col justify-center">
                   <h3 className="text-2xl sm:text-[28px] font-semibold mb-4">
                     {item.title}
                   </h3>
