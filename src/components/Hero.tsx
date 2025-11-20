@@ -1,16 +1,13 @@
-import grid from "../assets/images/hero.webp";
 import { ReactTyped } from "react-typed";
+import TronBackground from "./TronBackground";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen flex items-start justify-center text-center overflow-hidden pt-20">
-      <div className="absolute inset-0 -z-10">
-        <img
-          src={grid}
-          alt="Tron Legacy Background"
-          className="w-full h-full object-cover"
-        />
-      </div>
+    <section
+      id="hero"
+      className="relative w-full h-screen flex items-start justify-center text-center overflow-hidden pt-20"
+    >
+      <TronBackground />
       <div className="text-white px-4">
         <h1
           data-aos="fade-zoom-in"
