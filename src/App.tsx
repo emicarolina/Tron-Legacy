@@ -8,6 +8,8 @@ import Hero from "./components/Hero";
 import Legacy from "./components/Legacy";
 import MusicPlayer from "./components/MusicPlayer";
 import Soundtrack from "./components/Soundtrack";
+import Scanlines from "./components/Scanlines";
+import Loader from "./components/Loader";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -41,8 +43,13 @@ function App() {
       lenis.destroy();
     };
   }, []);
+
+  const handleLoaderComplete = () => {};
+
   return (
     <div>
+      <Scanlines />
+      <Loader onComplete={handleLoaderComplete} />
       <Header />
       <Hero />
       <About />
