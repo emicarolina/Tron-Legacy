@@ -52,30 +52,52 @@ const Curiosities = () => {
 
       <div
         data-aos="fade-up"
-        className="flex items-center justify-center w-full px-4"
+        className="
+      flex flex-col md:flex-row 
+      items-center justify-center 
+      w-full max-w-4xl mx-auto gap-4 px-4
+    "
       >
+        {/* SETA ESQUERDA — fica escondida no mobile */}
         <button
           onClick={scrollPrev}
-          className="p-2 rounded-full bg-tron-blue text-black font-bold hover:bg-white hover:shadow-tron mr-2"
+          className="
+        hidden md:flex 
+        p-3 rounded-full bg-tron-blue text-black hover:bg-white
+      "
         >
           <ArrowLeft />
         </button>
 
-        <div className="overflow-hidden w-full max-w-3xl" ref={emblaRef}>
+        {/* CAROUSEL ÚNICO */}
+        <div
+          className="overflow-hidden w-full max-w-sm md:max-w-xl"
+          ref={emblaRef}
+        >
           <div className="flex">
             {curiosities.map((item, index) => (
               <div
                 key={index}
-                className="flex-[0_0_100%] p-8 flex flex-col items-center justify-center select-none"
+                className="flex-[0_0_100%] p-4 flex flex-col items-center justify-center"
               >
-                <div className="bg-gray-900 p-8 rounded-2xl max-w-xl min-h-[400px] md:min-h-[300px] flex flex-col justify-center">
-                  <h3 className="text-2xl sm:text-[28px] font-semibold mb-4">
+                <div
+                  className="
+              bg-gray-900 p-6 rounded-2xl 
+              w-full min-h-[350px] md:min-w-[400px]
+              md:min-h-[350px]
+              flex flex-col justify-center border-tron-blue/30 border-2 select-none
+            "
+                >
+                  <h3 className="text-2xl md:text-2xl font-semibold mb-2 font-st text-tron-blue">
                     {item.title}
                   </h3>
-                  <p className="text-sm sm:text-[16px]">{item.description}</p>
+                  <p className="text-sm md:text-base font-prompt text-gray-400">
+                    {item.description}
+                  </p>
+
                   <img
                     src={item.image}
-                    className="w-32 h-32 max-w-xs rounded-full mx-auto mt-8 object-cover border-2"
+                    className="w-30 h-30 md:w-34 md:h-34 rounded-full mx-auto mt-8 object-cover border-2 border-tron-blue/50"
                   />
                 </div>
               </div>
@@ -83,9 +105,29 @@ const Curiosities = () => {
           </div>
         </div>
 
+        {/* SETA DIREITA — escondida no mobile */}
         <button
           onClick={scrollNext}
-          className="p-2 rounded-full bg-tron-blue text-black font-bold hover:bg-white hover:shadow-tron ml-2"
+          className="
+        hidden md:flex 
+        p-3 rounded-full bg-tron-blue text-black hover:bg-white
+      "
+        >
+          <ArrowRight />
+        </button>
+      </div>
+
+      {/* SETAS NO MOBILE EMBAIXO */}
+      <div className="flex md:hidden justify-center gap-6 mt-4">
+        <button
+          onClick={scrollPrev}
+          className="p-3 rounded-full bg-tron-blue text-black hover:bg-white"
+        >
+          <ArrowLeft />
+        </button>
+        <button
+          onClick={scrollNext}
+          className="p-3 rounded-full bg-tron-blue text-black hover:bg-white"
         >
           <ArrowRight />
         </button>
