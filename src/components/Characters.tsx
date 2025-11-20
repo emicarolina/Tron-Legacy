@@ -2,6 +2,7 @@ import kevin from "../assets/images/characters/kevin.webp";
 import sam from "../assets/images/characters/sam.webp";
 import quorra from "../assets/images/characters/quorra.webp";
 import clu from "../assets/images/characters/clu.webp";
+import { ReactTyped } from "react-typed";
 
 const Characters = () => {
   return (
@@ -10,7 +11,7 @@ const Characters = () => {
         data-aos="fade-up"
         className="text-4xl md:text-5xl font-bold text-center mb-12 font-prompt text-tron-blue"
       >
-        Personagens Principais
+        <ReactTyped strings={["Personagens Principais"]} showCursor={true} />
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
         <div

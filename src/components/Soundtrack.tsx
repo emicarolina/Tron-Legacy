@@ -1,3 +1,5 @@
+import { ReactTyped } from "react-typed";
+
 const Soundtrack = () => {
   return (
     <section className="relative w-full min-h-screen bg-gradient-to-b from-black to-gray-900 flex flex-col items-center justify-center px-6 py-16 text-center">
@@ -5,7 +7,10 @@ const Soundtrack = () => {
         data-aos="fade-up"
         className="text-4xl md:text-5xl font-bold font-prompt text-tron-blue mb-6"
       >
-        Trilha Sonora por Daft Punk
+        <ReactTyped
+          strings={["Trilha Sonora por Daft Punk"]}
+          showCursor={true}
+        />
       </h2>
       <p
         data-aos="fade-up"

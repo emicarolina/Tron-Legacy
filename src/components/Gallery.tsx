@@ -1,3 +1,5 @@
+import { ReactTyped } from "react-typed";
+
 const gallery = [
   "image1",
   "image2",
@@ -20,7 +22,7 @@ const Gallery = () => {
         data-aos="fade-up"
         className="text-4xl md:text-5xl font-bold text-center mb-12 font-prompt text-tron-blue"
       >
-        Galeria de Fotos
+        <ReactTyped strings={["Galeria de Fotos"]} showCursor={true} />
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {gallery.map((image, key) => (

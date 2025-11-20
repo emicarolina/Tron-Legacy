@@ -1,3 +1,5 @@
+import { ReactTyped } from "react-typed";
+
 const Legacy = () => {
   return (
     <section
@@ -11,7 +13,7 @@ const Legacy = () => {
         data-aos="fade-up"
         className="text-4xl md:text-5xl font-bold mb-10 font-prompt text-tron-blue"
       >
-        O Legado de Tron: Legacy
+        <ReactTyped strings={["O Legado de Tron: Legacy"]} showCursor={true} />
       </h2>
       <div data-aos="fade-up" className="max-w-3xl space-y-6">
         <p className="md:text-lg leading-relaxed">

@@ -1,6 +1,7 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ReactTyped } from "react-typed";
 
 const curiosities = [
   {
@@ -46,7 +47,7 @@ const Curiosities = () => {
         data-aos="fade-up"
         className="text-4xl md:text-5xl font-bold font-prompt text-tron-blue mb-8"
       >
-        Curiosidades
+        <ReactTyped strings={["Curiosidades"]} showCursor={true} />
       </h2>
 
       <div

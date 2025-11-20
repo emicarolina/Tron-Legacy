@@ -1,3 +1,5 @@
+import { ReactTyped } from "react-typed";
+
 const About = () => {
   return (
     <section
@@ -8,7 +10,7 @@ const About = () => {
         data-aos="fade-up"
         className="text-4xl md:text-5xl font-bold font-prompt text-tron-blue mb-6"
       >
-        Sobre o Filme
+        <ReactTyped strings={["Sobre o Filme"]} showCursor={true} />
       </h2>
       <p
         data-aos="fade-up"
