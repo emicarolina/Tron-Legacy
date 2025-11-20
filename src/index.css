@@ -6,12 +6,17 @@
 }
 @font-face {
   font-family: "Orbitron";
-  src: url("../src/assets/fonts/Orbitron-Regular.ttf");
+  src: url("../src/assets/fonts/Orbitron.ttf");
+}
+@font-face {
+  font-family: "Share Tech Mono";
+  src: url("../src/assets/fonts/ShareTechMono.ttf");
 }
 
 @theme {
   --font-prompt: "Prompt", sans-serif;
   --font-orbitron: "Orbitron", sans-serif;
+  --font-st: "Share Tech Mono", sans-serif;
 
   --text-shadow-tron: 0px 0px 10px rgba(12, 169, 255, 1);
   --shadow-tron: 0px 0px 21px rgba(12, 169, 255, 1);
