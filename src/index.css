@@ -19,7 +19,13 @@
   --font-st: "Share Tech Mono", sans-serif;
 
   --text-shadow-tron: 0px 0px 10px rgba(12, 169, 255, 1);
-  --shadow-tron: 0px 0px 21px rgba(12, 169, 255, 1);
 
   --color-tron-blue: #00d9ff;
+}
+
+.glass-panel {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 255, 255, 0.3);
 }
