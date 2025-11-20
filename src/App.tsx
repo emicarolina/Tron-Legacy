@@ -47,7 +47,7 @@ function App() {
   const handleLoaderComplete = () => {};
 
   return (
-    <div>
+    <div className="selection:bg-cyan-500 selection:text-black">
       <Scanlines />
       <Loader onComplete={handleLoaderComplete} />
       <Header />
