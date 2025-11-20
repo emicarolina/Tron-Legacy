@@ -16,7 +16,7 @@ const Legacy = () => {
         <ReactTyped strings={["O Legado de Tron: Legacy"]} showCursor={true} />
       </h2>
       <div data-aos="fade-up" className="max-w-3xl space-y-6">
-        <p className="md:text-lg leading-relaxed">
+        <p className="text-lg md:text-xl text-white max-w-3xl leading-relaxed font-light">
           Lançado em 2010,{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-tron-blue to-blue-500 font-bold">
             Tron: Legacy
@@ -27,7 +27,7 @@ const Legacy = () => {
           Daft Punk na trilha sonora não só potencializou a imersão no universo,
           como influenciou gerações de compositores e cineastas.
         </p>
-        <p className="md:text-lg leading-relaxed">
+        <p className="text-lg md:text-xl text-white max-w-3xl leading-relaxed font-light">
           Mesmo anos após seu lançamento,{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-tron-blue to-blue-500 font-bold">
             Tron: Legacy
