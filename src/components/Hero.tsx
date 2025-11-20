@@ -15,14 +15,14 @@ const Hero = () => {
         <h1
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
-          className="text-shadow-tron text-tron-blue text-4xl md:text-5xl font-mono font-bold"
+          className="text-shadow-tron text-tron-blue text-4xl md:text-5xl font-orbitron font-bold"
         >
           <ReactTyped
             strings={["Tron Legacy: o impossível se torna real."]}
             typeSpeed={50}
             backSpeed={30}
-            startDelay={500}
-            backDelay={4000}
+            startDelay={1900}
+            backDelay={3000}
             showCursor={true}
             loop={true}
           />
