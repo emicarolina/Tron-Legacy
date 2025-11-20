@@ -29,7 +29,7 @@ const Gallery = () => {
           <div
             data-aos="fade-up"
             key={key}
-            className="border-2 overflow-hidden rounded-lg shadow-lg"
+            className="border-2 border-tron-blue/40 overflow-hidden rounded-lg hover:ring-2 hover:ring-tron-blue"
           >
             <img
               src={`/gallery/${image}.webp`}
