@@ -30,7 +30,10 @@ const Loader: React.FC<LoaderProps> = ({ onComplete }) => {
   return (
     <div
       className="fixed inset-0 bg-black z-[100] flex flex-col items-center justify-center transition-opacity duration-500"
-      style={{ opacity }}
+      style={{
+        opacity: opacity,
+        pointerEvents: opacity === 0 ? "none" : "auto",
+      }}
     >
       <div
         className="text-4xl md:text-6xl font-orbitron font-bold tracking-widest mb-4 text-white"
