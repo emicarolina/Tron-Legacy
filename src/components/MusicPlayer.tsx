@@ -51,7 +51,7 @@ const MusicPlayer = () => {
       {!isMobile && isOpen ? (
         <div className="flex ml-3 items-center gap-3 w-full">
           <img
-            src="/public/album.webp"
+            src="/album.webp"
             alt="Tron Legacy album cover"
             className="w-12 h-12 rounded-md object-cover"
           />
